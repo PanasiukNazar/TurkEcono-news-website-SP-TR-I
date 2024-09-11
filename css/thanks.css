@@ -29,6 +29,11 @@ h1 {
     margin: 0;
     margin-bottom: 20px;
 }
+@media (max-width: 772px) {
+    h1 {
+        font-size: 2rem !important;
+    }
+}
 .wrapper-2 p {
     margin: 0;
     font-size: 1.3em;

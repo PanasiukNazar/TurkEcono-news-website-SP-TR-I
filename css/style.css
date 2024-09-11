@@ -15,22 +15,6 @@ body {
     position: relative;
 }
 
-body:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: 0.3s all ease;
-    -o-transition: 0.3s all ease;
-    transition: 0.3s all ease;
-    z-index: 8;
-}
-
 body.offcanvas {
     overflow: hidden;
 }
@@ -1388,13 +1372,12 @@ a:hover {
 .untree_co--site-mobile-menu {
     position: fixed;
     z-index: 1009;
-    height: 100vh;
+    height: 100%;
     background: #fff;
-    width: 280px;
+    width: 100% !important;
     overflow: auto;
     padding-top: 30px;
     padding-bottom: 70px;
-    width: 280px;
     left: 0;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -1414,7 +1397,7 @@ a:hover {
 }
 
 .untree_co--site-mobile-menu .close-wrap {
-    margin-right: 20px;
+    margin-right: 120px;
     position: relative;
 }
 
@@ -1543,6 +1526,7 @@ a:hover {
 }
 
 .untree_co--site-wrap {
+    overflow-x: hidden !important;
     width: calc(100%);
     -webkit-transition: 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
     transition: 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
